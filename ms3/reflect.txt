@@ -1,0 +1,25 @@
+// Name: Tarun Thomas
+// Seneca Student ID: 113605224
+// Seneca email: tthomas60@myseneca.ca
+// Date of completion: 1/12/2023
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me. 
+
+Initially, understanding the logic demanded a significant time investment. While I successfully tackled Milestones 1 and 2 without a thorough grasp of 
+the logic, Milestone 3 taught me a crucial lesson—proceeding with a project without a comprehensive understanding of the entire process can be difficult.
+ Consequently, I found myself revisiting Milestones 1 and 2 as I progressed through Milestone 3, ultimately achieving success by comprehending the overall project process.
+
+Throughout this milestone, I became increasingly familiar and comfortable with STL containers and algorithms. Implementing a linked-list algorithm using containers was 
+particularly enjoyable. A challenge arose during the implementation of the "attemptToMoveOrder" function in the "Workstation" file. Despite investing considerable 
+time and encountering debugging challenges, I successfully addressed errors and reached viable solutions.
+
+Additionally, the LineManager constructor presented a challenge—the shift from basic loop statements to utilizing STL algorithms instead. Extensive practice and
+ study during the last workshop eased this transition, making the challenge less formidable. This experience not only facilitated the incorporation of STL algorithms in the
+ LineManager constructor but also provided an opportunity to apply them in other functions like "run" or "display" in LineManager.cpp. The "run" function, employing a range-based
+ for statement (for (auto src : activeLine)), and the "display" function, utilizing for_each with a lambda expression (for_each(activeLine.begin(), activeLine.end(), [&](Workstation* src)),
+ exemplify the successful application of STL algorithms in various contexts.
+
+
+
+
+
