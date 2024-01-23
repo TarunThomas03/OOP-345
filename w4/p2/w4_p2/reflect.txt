@@ -1,0 +1,13 @@
+In this code excerpt and accompanying explanation, several key distinctions are made between composition and aggregation. Composition involves resource management, and a cheese shop, for instance, must contain cheese to be considered a cheese shop. This is reflected in how the arrays of cheese are declared in the code, with Cheese** m_cheeses{} for the shop and const Cheese** m_pCheeses{} for the party. Notably, the "const" in the party's declaration means that the actual cheese values cannot be changed, unlike in the shop.
+
+The code also illustrates how the two classes handle emptying their respective arrays. In the cheese shop, each cheese is deleted individually before the array itself is deleted. In contrast, the cheese party only deletes the array itself.
+
+Regarding move and copy constructors, the shop dynamically allocates memory for each cheese after allocating the array, while the party only dynamically allocates memory for the array.
+
+The process of dynamically allocating and copying cheeses differs between the two classes. In the shop, each cheese is dynamically allocated, copied from the source, and stored in the array. In the party, the assignment is made directly between const pointers to cheeses.
+
+When adding cheese in the party, it's necessary to check for duplicates to avoid having multiple pointers to the same cheese. In contrast, this isn't a concern in the shop since each cheese is a distinct instance. Additionally, when resizing the array in the shop, both the array and every cheese must be dynamically allocated.
+
+For removing cheese, the proposed approach for the cheese shop involves three member functions: findEmptyCheese, removeCheeseAndShrink, and removeCheese. These functions collectively identify and remove empty or unwanted cheeses while shrinking the array. Notably, in the shop's removeCheeseAndShrink, a new cheese is dynamically allocated before copying if necessary.
+
+The main difference between the shop and party in this context is that the shop involves dynamic allocation of individual cheeses during removal, while the party only deals with pointers to cheeses.
