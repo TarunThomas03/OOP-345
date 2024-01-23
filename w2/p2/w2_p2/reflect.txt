@@ -1,0 +1,17 @@
+
+I learned how to use the rule of 5 in this workshop by combining the prior rule of 3 with the move constructor and assignment operator.
+My memory of reading data from files and adding the data to a dynamically allocated array has been updated.
+Additionally, I now know how to use a few of the <chrono> library's components, including clocks, time points, finding the current time, and casting between different chrono types.
+
+The move operation changes the value it receives; it copies the address of the given object rather than deep copying its contents. We are able to do this because the received object is of type rvalue reference, which denotes that it is nearing the end of its life (either because it is going out of scope or because it is temporary).
+
+The strategy involved reading the file's row count, storing it in count, and then dynamically allocating the necessary amount of space for that count.
+after which the data is stored by reading the file line by line once again.
+While it is possible to read and count simultaneously without having to read the file again, doing so would be substantially slower because every new item of data would require a new allocation of space and deep copy..
+
+According to what I've read, system_clock does not have to be monotonic because it measures UNIX time; hence, if the system time is changed, the time points in this clock may decrease. While steady_clock is a monotonic clock that counts the number of reboots since the last one, it is monotonic because its starting time cannot be changed and its latest reboot cannot be advanced.
+Because steady_clock is monotonic and has a consistent beginning, it is better suited to be used to count time between two timestamps.
+If I understand correctly, system_clock is preferable for things like calendars and schedules because it goes back to January 1st, 1970, like UNIX time. This makes it more suitable to count the actual world time.
+
+
+
