@@ -1,0 +1,14 @@
+In line number 28 of your output:
+The output should be:
+001 | Armchair       | 654321 |   10 | Upholstered Wing Chair
+                                 ^
+But your output is: 
+001 | Armchair       | 654321 |  Quantity: 10              Description:   Upholstered Wing Chair
+                                 ^
+
+Unmatched character details:
+The character in column 34 is supposed to be:
+  [Space] ASCII code(32)
+but you printed
+  [Q] ASCII code(81)
+

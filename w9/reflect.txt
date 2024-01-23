@@ -1,0 +1,6 @@
+The advantage of not having to worry about formatting and solely focusing on obtaining accurate data, without the complexity of handling tokens as in previous workshops, was significant. The ability to bind functions to their arguments, facilitated by std::ref (or ref), allowed for in-place changes and ensured that references to variables were seamlessly passed to threads. This was particularly advantageous when multiple threads collaborated on shared data tasks, such as computing variance and average parts. The use of multiple threads was found to markedly enhance data processing performance, enabling simultaneous execution of functions and faster computation, especially when dealing with substantial datasets. The implementation's overall efficiency received a notable boost through the use of std::thread, simplifying the execution of computeAvgFactorThreaded for multiple data sections.
+
+
+
+
+

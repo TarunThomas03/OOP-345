@@ -1,0 +1,9 @@
+For smart pointers and memory management, the use of smart pointers, like std::unique_ptr and std::shared_ptr, eliminates the need for manual deallocation, addressing potential memory leaks associated with raw pointers. Syntax differences between raw and smart pointers are notable, with smart pointers offering a more streamlined and safer approach to memory handling. The observation that unnecessary copies are made during profile validation is accurate, suggesting an optimization strategy of validating first before copying to avoid redundant operations. Regarding the use of std::move in the context of adding items to a database, its impact may vary depending on the specific implementation details, and introducing a move constructor in the Profile class, while generally beneficial, can sometimes lead to unexpected complications, necessitating careful consideration and potential community support for issue resolution.
+
+
+
+
+
+
+
+
