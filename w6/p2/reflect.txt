@@ -1,0 +1,9 @@
+In workshop six, the primary topics I worked through were standard library, containers, and iterators. C++ standard library is a 
+collection of classes and functions that are written in the core language and part of the C++ ISO standard itself. The C++ container 
+is an object used to store collections of other objects. Iterators are an efficient method to traverse the elements of any type
+of container such as: Vectors, Deques and Lists. I practiced these in workshop 6.
+
+This workshop defines several classes and enums to represent directories, files, and resource types. The Resource base class serves as an interface for these resource types. The Filesystem class manages the entire filesystem, allowing for the creation of directories, files, and changing the working directory. These codes
+demonstrates features like changing directories, finding files within directories, adding directories and files to the filesystem, and removing them, all while handling exceptions. The program also includes comprehensive error checks and informative messages for various scenarios, ensuring robust error handling.
+
+In this workshop, std::vector is used to store sdds::FormatFlags and sdds::OpFlags, which are used to control the display and operation options within the filesystem management system. This dynamic array simplifies the management of these flags and provides a convenient way to pass them to functions or methods that require specific options for their operations.
